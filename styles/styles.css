@@ -1,0 +1,162 @@
+:root {
+    --main-bg-color: lightsteelblue;
+}
+
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+     line-height: 1.5;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: blue;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+     position:fixed;
+     min-width:290px;
+     top:0px;
+     left:0px;
+     width:300px;
+     height:100%;
+     border: 2px solid darkolivegreen;
+     background-color: lightseagreen;
+     box-shadow: 5px 5px 2px gray;
+     border-radius: 20px;
+}
+header {
+    color: blue;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+    text-transform: uppercase;
+}
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+    width: 100%;
+    
+}
+#navbar ul {
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    color: darkblue;
+    border-top: 1px solid;
+    padding: 8px;
+    padding-left: 5px;
+    list-style: none;
+    position: relative;
+    left: -20px;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#navbar a {
+    color: darkgreen;
+    text-decoration: none;
+    cursor: pointer;
+}
+section header {
+    color: indigo;
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+    
+}
+section article {
+    color: purple;
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    background-color: lightslategray;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 815px) {
+
+    #navbar ul {
+        border: 1px solid;
+        height: 155px;
+    }
+
+    #navbar {
+        background-color: lightseagreen;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 300px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+        display: block;
+        justify-content: center;
+    }
+
+    #main-doc section {
+          padding-top: 20px;
+          display: block;
+          justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
